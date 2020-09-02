@@ -8,7 +8,7 @@ const TodoList = props =>  {
         <div className="list">
             {props.data.map(item =>{
                 
-                return <Item item={item} key={item.id} toggleItem={props.toggleItem} />
+                return <Item item={item} key={item.id} toggleList={props.toggleList} />
             })}
             <button type="submit" onClick={props.clearTask}>Clear Completed Tasks</button>
         </div>

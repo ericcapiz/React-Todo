@@ -2,7 +2,7 @@ import React from 'react';
 import { data } from './components/Todo';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
-// import './Todo.css';
+import './components/Todo.css';
 
 class App extends React.Component {
   constructor(){
@@ -52,7 +52,7 @@ class App extends React.Component {
         <h2>Welcome to your Todo App!</h2>
         <TodoForm addItem={this.addItem} />
         </div>
-        <TodoList data={this.state.data} toggleItem={this.toggleItem}
+        <TodoList data={this.state.data} toggleList={this.toggleList}
         clearTask={this.clearTask}></TodoList>
         </div>
       
